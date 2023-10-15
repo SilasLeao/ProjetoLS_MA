@@ -24,21 +24,26 @@ header {
     font-size: 32px;
 }
 
-.div_carrossel {
+.teste {
     margin-top: 3rem;
-    height: 700px;
-    width: 100%;
-}
-
-.carrossel {
-    height: 700px;
-    width: 100%;
+    height: 60%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.carrossel {
+    margin-top: 3rem;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .carrossel .slide{
@@ -52,15 +57,35 @@ header {
 }
 
 #prevButton {
-    height: 2.5rem;
-    margin-left: 1.5rem;
-    padding-left: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+    color: honeydew;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 
 #nextButton {
-    height: 2.5rem;
-    margin-right: 1.5rem;
-    padding-right: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+    color: honeydew;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+#prevButton:hover, #nextButton:hover {
+    scale: 1.1;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 a {

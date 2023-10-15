@@ -1,8 +1,6 @@
-const carrossel = document.querySelectorAll('.carrossel')
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
-const imagem = document.getElementById('imagens')
 let currentSlide = 0;
 
 function showSlide(slideIndex) {
@@ -15,8 +13,6 @@ function showSlide(slideIndex) {
     slides[i].style.display = 'none';
   }
   slides[currentSlide].style.display = 'block';
-  carrossel.style = 'none';
-//   carrossel.style.backgroundimage = `'url(${imagem[currentSlide].src})'`;
 }
 
 prevButton.addEventListener('click', () => {

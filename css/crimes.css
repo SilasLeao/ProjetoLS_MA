@@ -109,6 +109,9 @@ a:hover {
 .deleteBtn:hover {
     cursor: pointer;
     scale: 1.1;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #3737372c;
 }
 
 .cardContent {

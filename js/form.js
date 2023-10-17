@@ -23,7 +23,7 @@ function mostrarCrimeCards() {
         }
         })
 
-        crimeCard.append(deleteBtn)
+        crimeCard.firstChild.append(deleteBtn)
         cardContainer.append(crimeCard)
         
     }
@@ -138,7 +138,7 @@ addBtn.addEventListener('click', () => {
             }
             })
 
-            crimeCard.append(deleteBtn)
+            crimeCard.firstChild.append(deleteBtn)
             cardContainer.append(crimeCard)
 
             formContainer.style.display = 'none';

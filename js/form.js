@@ -9,8 +9,26 @@ function mostrarCrimeCards() {
     for(const cardData of existingData) {
         const { tipo, data, descricao } = cardData
         const crimeCard = createCrimeCard(tipo, data, descricao);
+        const deleteBtn = document.createElement('span');
+        deleteBtn.classList.add('material-symbols-outlined')
+        deleteBtn.classList.add('deleteBtn')
+        deleteBtn.innerHTML = 'close'
+        deleteBtn.addEventListener('click', () => {
+        cardContainer.removeChild(crimeCard)
+        const cardIndex = existingData.indexOf(cardData);
+        if (cardIndex !== -1) {
+            existingData.splice(cardIndex, 1);
+            // Update localStorage without the deleted card
+            localStorage.setItem('crimeCards', JSON.stringify(existingData));
+        }
+        })
+
+        crimeCard.append(deleteBtn)
         cardContainer.append(crimeCard)
+        
     }
+//<span id="removeBtn" class="material-symbols-outlined">close</span>
+
 }
 
 window.addEventListener('load', () => {
@@ -18,6 +36,7 @@ window.addEventListener('load', () => {
 });
 
 addBtn.addEventListener('click', () => {
+
     container.style.pointerEvents = 'none';
     const form = document.createElement("form");
         form.innerHTML = `
@@ -66,7 +85,6 @@ addBtn.addEventListener('click', () => {
             </form>       
         `;
 
-        // Append the form to the body
         document.body.insertAdjacentHTML('afterbegin', form.innerHTML);
         container.classList.add('blur')
 
@@ -81,15 +99,15 @@ addBtn.addEventListener('click', () => {
         const addCrimeBtn = document.querySelector('.addCrimeBtn');
         addCrimeBtn.addEventListener('click', () => {
             const tipo = document.querySelector('#type').value;
-            let data = document.querySelector('#date').value;
-            let reversedData = data.split('-')
-            data = `${reversedData[2]}/${reversedData[1]}/${reversedData[0]}`
-            const descricao = document.querySelector('#description').value;
-            
+            let data = document.querySelector('#date').value;           
+            const descricao = document.querySelector('#description').value;           
             if(data == '' || descricao == '') {
                 alert('Por favor, preencha a data e/ou a descrição!')
                 return
             }
+            let reversedData = data.split('-')
+            data = `${reversedData[2]}/${reversedData[1]}/${reversedData[0]}`
+
 
             const crimeCard = createCrimeCard(tipo, data, descricao);
 
@@ -104,13 +122,29 @@ addBtn.addEventListener('click', () => {
             const existingData = JSON.parse(localStorage.getItem('crimeCards')) || [];
 
             existingData.push(cardData);
-            
             localStorage.setItem('crimeCards', JSON.stringify(existingData));
             
+            const deleteBtn = document.createElement('span');
+            deleteBtn.classList.add('material-symbols-outlined')
+            deleteBtn.classList.add('deleteBtn')
+            deleteBtn.innerHTML = 'close'
+            deleteBtn.addEventListener('click', () => {
+            cardContainer.removeChild(crimeCard)
+            const cardIndex = existingData.indexOf(cardData);
+            if (cardIndex !== -1) {
+                existingData.splice(cardIndex, 1);
+                // Update localStorage without the deleted card
+                localStorage.setItem('crimeCards', JSON.stringify(existingData));
+            }
+            })
+
+            crimeCard.append(deleteBtn)
+            cardContainer.append(crimeCard)
 
             formContainer.style.display = 'none';
             container.classList.remove('blur')
             container.style.pointerEvents = 'auto';
         });
+        
 })
 

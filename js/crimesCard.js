@@ -1,16 +1,4 @@
 export function createCrimeCard(tipo, data, descricao) {
-    // return `
-    // <div class="card">
-    //     <section class="cardTitle">
-    //         <h3>${tipo}</h3>
-    //     </section>
-    //     <section class="cardContent">
-    //         <p>${data}</p>
-    //         <hr>
-    //         <p>${descricao}</p>
-    //     </section>
-    // </div>
-    // `
     const card = document.createElement('div');
     card.classList.add('card');
 

@@ -5,19 +5,14 @@ export const crimes = [
         descricao: 'Avistei um caçador abatendo uma jaguatirica no estado na cidade de Goiana-GO na mata do buraquinho.',
     },
     {
-        tipo: 'Caça ilegal',
+        tipo: 'Queimada',
         data: '25/07/2023',
-        descricao: 'Avistei um caçador abatendo uma jaguatirica no estado na cidade de Goiana-GO na mata do buraquinho.',
+        descricao: 'lorem ipsum dolor sit amet, consectetur',
     },
     {
-        tipo: 'Caça ilegal',
+        tipo: 'Poluição das Águas',
         data: '25/07/2023',
-        descricao: 'Avistei um caçador abatendo uma jaguatirica no estado na cidade de Goiana-GO na mata do buraquinho.',
-    },
-    {
-        tipo: 'Caça ilegal',
-        data: '25/07/2023',
-        descricao: 'Avistei um caçador abatendo uma jaguatirica no estado na cidade de Goiana-GO na mata do buraquinho.',
+        descricao: 'UAHS ÇAO OK JOAD JOPAPO DJPAJO ADPJOPJOISADJOPIASOJPIDASJPIOJDIO',
     }
 ]
 

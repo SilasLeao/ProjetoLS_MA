@@ -1,5 +1,21 @@
+import { createCrimeCard } from './crimesCard.js';
 const addBtn = document.querySelector('#addBtn');
 const container = document.querySelector('.container');
+const cardContainer = document.querySelector('.cardContainer')
+
+function mostrarCrimeCards() {
+    const existingData = JSON.parse(localStorage.getItem('crimeCards')) || [];
+
+    for(const cardData of existingData) {
+        const { tipo, data, descricao } = cardData
+        const crimeCard = createCrimeCard(tipo, data, descricao);
+        cardContainer.append(crimeCard)
+    }
+}
+
+window.addEventListener('load', () => {
+    mostrarCrimeCards();
+});
 
 addBtn.addEventListener('click', () => {
     container.style.pointerEvents = 'none';
@@ -15,10 +31,10 @@ addBtn.addEventListener('click', () => {
                         <label for="type">Tipo:</label>
                         <br>
                         <select name="type" id="type">
-                            <option value="cacaIlegal">Caça Ilegal</option>
-                            <option value="poluicaoAgua">Poluição de Águas</option>
-                            <option value="queimada">Queimada</option>
-                            <option value="lixo">Descarte inadequado de Lixo</option>
+                            <option value="Caça Ilegal">Caça Ilegal</option>
+                            <option value="Poluição de Águas">Poluição de Águas</option>
+                            <option value="Queimada">Queimada</option>
+                            <option value="Descarte inadequado de Lixo">Descarte inadequado de Lixo</option>
                         </select>
                         </section>
                         <section>
@@ -29,7 +45,7 @@ addBtn.addEventListener('click', () => {
                         <section>
                             <label for="description">Descrição:</label>
                             <br>
-                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                            <textarea name="description" id="description" cols="30" rows="10" maxlength="180"></textarea>
                         </section>
                     </div>
                     <div class="formFooter">
@@ -64,7 +80,37 @@ addBtn.addEventListener('click', () => {
 
         const addCrimeBtn = document.querySelector('.addCrimeBtn');
         addCrimeBtn.addEventListener('click', () => {
-            alert('a')
+            const tipo = document.querySelector('#type').value;
+            let data = document.querySelector('#date').value;
+            let reversedData = data.split('-')
+            data = `${reversedData[2]}/${reversedData[1]}/${reversedData[0]}`
+            const descricao = document.querySelector('#description').value;
+            
+            if(data == '' || descricao == '') {
+                alert('Por favor, preencha a data e/ou a descrição!')
+                return
+            }
+
+            const crimeCard = createCrimeCard(tipo, data, descricao);
+
+            cardContainer.append(crimeCard);
+
+            const cardData = {
+                tipo,
+                data,
+                descricao,
+            };
+
+            const existingData = JSON.parse(localStorage.getItem('crimeCards')) || [];
+
+            existingData.push(cardData);
+            
+            localStorage.setItem('crimeCards', JSON.stringify(existingData));
+            
+
+            formContainer.style.display = 'none';
+            container.classList.remove('blur')
+            container.style.pointerEvents = 'auto';
         });
 })
 

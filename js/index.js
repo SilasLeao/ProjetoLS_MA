@@ -1,7 +1,6 @@
-import { imagens } from "../imgs/imgs.js";
+import { imagens } from "./imgs/imgs.js";
 
 
-// const slides = document.querySelectorAll('.slide');
 let intervalId
 const tituloNoticia = document.getElementById('tituloNoticia');
 const descricaoNoticia = document.getElementById('descricaoNoticia');

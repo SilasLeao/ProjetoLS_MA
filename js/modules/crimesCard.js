@@ -19,3 +19,4 @@ export function createCrimeCard(tipo, data, descricao) {
 
     return card
 }
+

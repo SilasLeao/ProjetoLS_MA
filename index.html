@@ -13,18 +13,20 @@
 <body>
     <div class="container">
         <header>
-            <a href="../index.html">
+            <a id="homeBtn" href="../index.html">
                 <p>SalveUCs</p>
+            </a>
+            <a id="denunciarBtn" href="./pages/crimes.html">
+                Denuncie aqui!
             </a>
         </header>       
         <div class="content">
             <div class = "carrossel">
-                <section class="teste">
+                <section class="imagem">
                     <button id="prevButton"><span class="material-symbols-outlined" style="font-size: 2rem;">
                         chevron_left
                         </span>
-                    </button>
-                    
+                    </button>    
                     <button id="nextButton"><span class="material-symbols-outlined" style="font-size: 2rem;">
                         chevron_right
                         </span></button>
@@ -33,14 +35,46 @@
                     <h1 id="tituloNoticia"></h1>
                     <p id="descricaoNoticia"></p>
                 </section>
-            </div>       
-            <footer>
+            </div>    
+            <section class="texto">
+                <p>
+                    Bem-vindo ao nosso portal dedicado às Unidades de Conservação, verdadeiros tesouros da natureza que abraçam a nossa jornada em busca de um planeta mais verde e sustentável.
+                </p>
+                <p>
+                    No coração das nossas florestas, montanhas majestosas e costas intocadas, as Unidades de Conservação desempenham um papel vital na preservação de ecossistemas ricos e na proteção da vida selvagem que neles habita. Agora, mais do que nunca, é crucial entender e apoiar esses espaços preciosos.
+                </p>
+                <p>
+                    Aqui, você encontrará informações claras e atualizadas sobre as nossas UCs, desde a exuberante Amazônia até as belas áreas marinhas. Descubra as maravilhas que esses locais oferecem e a importância de conservá-los para as gerações futuras.
+                </p>
+                <p>
+                    Mas não é só isso. Este é um chamado à ação. Precisamos do seu envolvimento e apoio para garantir que esses santuários naturais permaneçam intocados. Através da conscientização, voluntariado, educação e denúncia, juntos podemos proteger o que é nosso por direito e construir um futuro mais sustentável.
+                </p>
+                <p>
+                    Vamos embarcar nesta jornada de descoberta e comprometimento. Explore, aprenda e una-se à causa. Juntos, podemos ser os guardiões da natureza e as vozes das Unidades de Conservação, protegendo o nosso futuro e garantindo que as maravilhas da natureza continuem a nos maravilhar.
+                </p>
+                <h2>
+                    Seja parte dessa mudança. <a id="comecarBtn" href="./pages/acoes.html">Comece agora!</a>
+                </h2>
+            </section>   
+            <div class="icone">
                 <span style="font-size: 36px;" class="material-symbols-outlined icon">
                     light_mode
                 </span>
+            </div>
+            <footer>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
             </footer>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/f9e40fd065.js" crossorigin="anonymous"></script>
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>

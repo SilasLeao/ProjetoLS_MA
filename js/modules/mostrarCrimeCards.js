@@ -2,7 +2,7 @@ import { createCrimeCard } from './crimesCard.js';
 
 const cardContainer = document.querySelector('.cardContainer')
 
-export function mostrarCards() {
+export function mostrarCrimeCards() {
     const existingData = JSON.parse(localStorage.getItem('crimeCards')) || [];
 
     for(const cardData of existingData) {

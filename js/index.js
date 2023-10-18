@@ -6,7 +6,7 @@ const tituloNoticia = document.getElementById('tituloNoticia');
 const descricaoNoticia = document.getElementById('descricaoNoticia');
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
-let imagensCarrossel = document.querySelector('.teste');
+let imagensCarrossel = document.querySelector('.imagem');
 let currentSlide = 0;
 
 function showSlide(slideIndex) {

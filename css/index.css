@@ -4,13 +4,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #292929;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #161616;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #292929;
 }
 
-.container {
-    height: 100vh;
-    width: 100vw;
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -24,7 +39,29 @@ header {
     font-size: 32px;
 }
 
-.teste {
+#homeBtn {
+    text-decoration: none;
+    color: honeydew;
+    transition: 0.3s;
+    position: absolute;
+}
+
+#homeBtn:hover {
+    scale: 1.1;
+}
+
+#denunciarBtn {
+    color: honeydew;
+    font-size: 16px;
+    margin-left: 90%;
+}
+
+#denunciarBtn:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.imagem {
     margin-top: 3rem;
     height: 60%;
     width: 60%;
@@ -99,15 +136,6 @@ header {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: honeydew;
-    transition: 0.3s;
-}
-
-a:hover {
-    scale: 1.1;
-}
 
 .icon {
     color: honeydew;
@@ -121,15 +149,73 @@ a:hover {
     cursor: pointer;
 }
 
-footer span{
+.texto {
+    display: flex;
+    color: honeydew;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+}
+
+.texto h2 {
+    margin: 2rem 0 6rem 0;
+}
+
+.texto p {
+    margin-bottom: 10px;
+}
+
+#comecarBtn {
+    color:#C51515;  
+    text-decoration: none;
+}
+
+#comecarBtn:hover {
+    cursor: pointer;
+    color: #f73e3e;
+    text-decoration: underline;
+}
+
+.icone span{
     background-color: #C51515;
     border-radius: 50px;
     padding: 1rem;
 }
 
-footer {
+.icone {
     display: flex;
+    position: fixed;
+    bottom: 2rem;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+footer {
+    box-shadow: 0px -6px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #C51515;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-brands {
+    color: #fff;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    padding: 0.6rem;
+    border-radius: 100%;
+    transition: 0.3s
+}
+
+.fa-brands:hover {
+    background-color: #fff;
+    color: #24202B;
+    cursor: pointer;
+    scale: 1.2;
 }

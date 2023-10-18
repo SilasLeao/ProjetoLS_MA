@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 8vh;
+    background-color: #C51515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 32px;
+}
+
+#homeBtn {
+    text-decoration: none;
+    color: honeydew;
+    transition: 0.3s;
+    position: absolute;
+}
+
+#homeBtn:hover {
+    scale: 1.1;
+}
+
+#denunciarBtn {
+    color: honeydew;
+    font-size: 16px;
+    margin-left: 90%;
+}
+
+#denunciarBtn:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}

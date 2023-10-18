@@ -1,12 +1,12 @@
 import { createCrimeCard } from './modules/crimesCard.js';
-import { mostrarCards } from './modules/mostrarCards.js';
+import { mostrarCrimeCards } from './modules/mostrarCrimeCards.js';
 
 const addBtn = document.querySelector('#addBtn');
 const container = document.querySelector('.container');
 const cardContainer = document.querySelector('.cardContainer')
 
 window.addEventListener('load', () => {
-    mostrarCards();
+    mostrarCrimeCards();
 });
 
 addBtn.addEventListener('click', () => {

@@ -30,6 +30,7 @@ header {
 }
 
 a {
+    text-decoration: none;
     color: honeydew;
     transition: 0.3s;
 }

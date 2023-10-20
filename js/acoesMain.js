@@ -1,3 +1,4 @@
+a
 import acoesCards from "./imgs/acoesCards.js";
 import { criarAcaoCard } from "./modules/criarAcoesCard.js";
 

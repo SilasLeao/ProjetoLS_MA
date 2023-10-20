@@ -12,7 +12,7 @@ export function criarAcaoCard(acao) {
         <div class="cardContent">
             ${acao.conteudo}
         </div>
-        <a href="${acao.linkBtn}">
+        <a target="_blank" href="${acao.linkBtn}">
             <button>
                 Saiba mais
             </button>

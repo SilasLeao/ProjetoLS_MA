@@ -1,4 +1,3 @@
-a
 export const acoesCards = [
     {
         url: 'https://www.segs.com.br/media/k2/items/cache/4bc5fe3812201d6efde76c06e34de780_XL.jpg',

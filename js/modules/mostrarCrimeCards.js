@@ -1,4 +1,3 @@
-a
 import { createCrimeCard } from './crimesCard.js';
 
 const cardContainer = document.querySelector('.cardContainer')

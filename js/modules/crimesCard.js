@@ -1,4 +1,3 @@
-a
 export function createCrimeCard(tipo, data, descricao) {
     const card = document.createElement('div');
     card.classList.add('card');

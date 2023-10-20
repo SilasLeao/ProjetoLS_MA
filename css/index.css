@@ -62,8 +62,7 @@ header {
 }
 
 .imagem {
-    margin-top: 3rem;
-    height: 60%;
+    height: 100%;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -75,10 +74,14 @@ header {
     box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+#tituloNoticia, #descricaoNoticia {
+    color: honeydew;
+}
+
 .descricao {
     width: 60%;
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     background-color: #C51515;
     border-radius: 0 0 30px 30px;
@@ -86,8 +89,8 @@ header {
 }
 
 .carrossel {
-    margin-top: 3rem;
-    height: 700px;
+    margin: 4rem 0;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -136,19 +139,6 @@ header {
     cursor: pointer;
 }
 
-
-.icon {
-    color: honeydew;
-    margin: 0 2rem 0 2rem;
-    transition: 0.3s;
-}
-
-.icon:hover {
-    opacity: 0.8;
-    scale: 1.1;
-    cursor: pointer;
-}
-
 .texto {
     display: flex;
     color: honeydew;
@@ -175,22 +165,6 @@ header {
     cursor: pointer;
     color: #f73e3e;
     text-decoration: underline;
-}
-
-.icone span{
-    background-color: #C51515;
-    border-radius: 50px;
-    padding: 1rem;
-}
-
-.icone {
-    display: flex;
-    position: fixed;
-    bottom: 2rem;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
 }
 
 footer {

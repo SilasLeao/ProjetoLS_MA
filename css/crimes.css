@@ -6,7 +6,7 @@
 
 body {
     background-color: #292929;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -45,7 +45,6 @@ a:hover {
     align-items: center;
     background-color: #292929;
     height: 92vh;
-    position: relative;
 }
 
 .title {
@@ -152,7 +151,7 @@ footer span{
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
     margin-bottom: 2rem;
 }

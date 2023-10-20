@@ -15,7 +15,7 @@ function showSlide(slideIndex) {
   } else if (slideIndex >= imagens.length) {
     currentSlide = 0;
   }
-  imagensCarrossel.style.backgroundImage = `url(${imagens[currentSlide].url})`;
+  imagensCarrossel.style.backgroundImage = `url(${imagens[currentSlide].caminho})`;
   tituloNoticia.innerHTML = imagens[currentSlide].tituloNoticia
   descricaoNoticia.innerHTML = imagens[currentSlide].descricao
 }

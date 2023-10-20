@@ -1,12 +1,17 @@
 export const imagens = [
     {
-        url: 'https://plus.unsplash.com/premium_photo-1694475660256-7efc87072d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2104&q=80',
-        tituloNoticia: 'Teste1',
-        descricao: 'Teste1'
+        caminho: '../../assets/desmatamento.jpeg',
+        tituloNoticia: 'Mata Atlântica: desmatamento aumenta 525% no RN',
+        descricao: 'O desmatamento da área de Mata Atlântica no Rio Grande do Norte subiu de 40 mil m2, entre janeiro e maio de 2022, para 210 mil m2 no comparativo com o mesmo período deste ano. Os números representam um aumento de 525%.'
     },
     {
-        url: 'https://lh3.googleusercontent.com/dAgh3IM4sbLUjJdxWrBjAg6eiX80mUvvcgYxA3BaZE0FnI6OSMivISc1YMh3RXcpUxkWMkb5cYbe9DKm_lNlMKoy-G5dZTOnmgbgPsCGA6VPTfDQLhSbeJuwrL3G3ZYNG_BfIrGb',
-        tituloNoticia: 'Teste2',
-        descricao: 'Teste2'
+        caminho: '../../assets/queimada.jpg',
+        tituloNoticia: 'Com 7 mil focos de queimadas em setembro, Amazonas tem pior mês de fogo no ano',
+        descricao: 'Número está acima da média e é registrado em um período de seca severa e depois de anos de desmatamento em alta.'
+    },
+    {
+        caminho: '../../assets/queimada.jpg',
+        tituloNoticia: 'Com 7 mil focos de queimadas em setembro, Amazonas tem pior mês de fogo no ano',
+        descricao: 'Número está acima da média e é registrado em um período de seca severa e depois de anos de desmatamento em alta.'
     }
 ]

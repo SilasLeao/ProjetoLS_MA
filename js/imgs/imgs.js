@@ -9,9 +9,4 @@ export const imagens = [
         tituloNoticia: 'Com 7 mil focos de queimadas em setembro, Amazonas tem pior mês de fogo no ano',
         descricao: 'Número está acima da média e é registrado em um período de seca severa e depois de anos de desmatamento em alta.'
     },
-    {
-        caminho: '../../assets/queimada.jpg',
-        tituloNoticia: 'Com 7 mil focos de queimadas em setembro, Amazonas tem pior mês de fogo no ano',
-        descricao: 'Número está acima da média e é registrado em um período de seca severa e depois de anos de desmatamento em alta.'
-    }
 ]
